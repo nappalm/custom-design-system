@@ -1,7 +1,7 @@
 .nav {
   background-color: #212529;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-family: 'Fira Mono', monospace;
   font-size: 14px;
 }

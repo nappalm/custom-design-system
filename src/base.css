@@ -8,4 +8,5 @@ body {
   background-color: #0a0908;
   color: #adb5bd;
   font-size: 16px;
+  overflow: hidden;
 }

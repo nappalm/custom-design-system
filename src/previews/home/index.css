@@ -1,0 +1,30 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+}
+
+code {
+  color: #455e89;
+  font-family: 'Berkshire Swash', cursive;
+}
+.divider {
+  height: 1px;
+  background-color: #455e89;
+  width: 100%;
+  opacity: .2;
+}
+.linksSection {
+  text-align: center;
+}
+.linksSection a {
+  color: white;
+}

@@ -27,7 +27,11 @@
   margin: 5px 10px;
   border-radius: 5px;
   color: #edf6f9;
-  cursor: pointer;
+}
+
+.section a {
+  color: #edf6f9;
+  text-decoration: none;
 }
 
 .section ol:hover:not(.active) {

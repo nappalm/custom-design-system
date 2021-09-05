@@ -2,7 +2,7 @@ import React from 'react';
 import Caldera from '../../assets/caldera.svg';
 import styled from './index.css';
 
-const Home: React.FC<unknown> = () => {
+const Home: React.FC<any> = () => {
   return (
     <div className={styled.base}>
       <img

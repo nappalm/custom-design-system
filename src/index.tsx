@@ -4,6 +4,7 @@ import { Location, Router } from '@reach/router';
 import pagePreview from './previews/pagePreview';
 import Home from './previews/home';
 
+import Header from './previews/__header';
 import Layout from './layout';
 import './base.css';
 
@@ -12,36 +13,58 @@ type RenderPreviewProps = {
   preview: string;
 }
 
-const RenderPreview: React.FC<RenderPreviewProps> = ({ preview }) => {
+const styledPreview = {
+  backgroundColor: 'white',
+  borderRadius: 5,
+  padding: 10,
+  height: 'calc(100vh - 12rem)',
+  overflowY: 'scroll',
+  color: '#0a0908'
+}
+const PreviewComponent: React.FC<RenderPreviewProps> = ({ preview }) => {
   let Preview;
 
   try {
     Preview = require(`./previews/${preview}`).default;
-  } catch {
+    console.log(Preview);
+  } catch (error) {
     Preview = () => null;
   }
 
-  return Preview;
+  return <div>
+    <Header name={preview} />
+    <div style={styledPreview}>
+      <h1>
+        ✒️ Examples
+      </h1>
+      <Preview/>
+    </div>
+  </div>;
 }
 
+const Routing = () => (
+<Location>
+  {({ location }:any) => (
+    <Layout>
+      <Router location={location} style={{ height: '100%' }}>
+        <Home path="/" />
+      { pagePreview.map((preview) => (
+          <PreviewComponent 
+            preview={preview}
+            key={preview}
+            path={preview}
+          />
+        ))
+      }
+      </Router>
+    </Layout>
+  )}
+</Location>
+);
 
 ReactDOM.render(
-  <Location>
-    {({ location }:any) => (
-      <Layout>
-        <Router location={location} style={{ height: '100%' }}>
-          <Home path="/" />
-        { pagePreview.map((preview) => (
-            <RenderPreview 
-              preview={preview}
-              key={preview}
-              path={preview}
-            />
-          ))
-        }
-        </Router>
-      </Layout>
-    )}
-  </Location>
+  <React.StrictMode>
+    <Routing />
+  </React.StrictMode>
   ,document.getElementById('root')
 )

@@ -6,6 +6,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.css'],
   },
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     rules: [
       {

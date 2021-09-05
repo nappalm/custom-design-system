@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from './index.css';
+import { Link } from '@reach/router';
 
 const Nav: React.FC<unknown> = () => {
   return (
@@ -8,7 +9,16 @@ const Nav: React.FC<unknown> = () => {
       <ul className={styled.list}>
         <li className={styled.section}>
           🌍 General
-          <ol className={styled.active}>Button</ol>
+          <ol>
+            <Link to="/">
+              Introducción
+            </Link>
+          </ol>
+          <ol>
+            <Link to="/button">
+              Button
+            </Link>
+          </ol>
           <ol>Typography</ol>
         </li>
         <li className={styled.section}>

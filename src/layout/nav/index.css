@@ -1,0 +1,35 @@
+.nav {
+  background-color: #212529;
+  width: 100%;
+  overflow-y: scroll;
+  font-family: 'Fira Mono', monospace;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.section {
+  color: #495057;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #455e89;
+  color: white;
+}
+
+.section ol {
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  color: #edf6f9;
+  cursor: pointer;
+}
+
+.section ol:hover:not(.active) {
+  color: #455e89;
+}

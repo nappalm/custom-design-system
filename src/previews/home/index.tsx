@@ -14,7 +14,7 @@ const Home: React.FC<any> = () => {
       </h1>
       <p>
         En este curso aprenderas a crear tu propio sistema de diseño. <br />
-        Es necesario que ya hayas adquiro conocimiento sobre <code>React.js</code> & <code>Typescript</code> <br />
+        Es necesario que ya hayas adquiro conocimiento sobre <code className={styled.code}>React.js</code> & <code className={styled.code}>Typescript</code> <br />
         de lo contrario no te preocupes, te ayudare a mejorar tus conocimientos. 
         <br /> <br />
         Recuerda que para aprender solo necesitar practicar y aquí tienes suficiente por hacer.

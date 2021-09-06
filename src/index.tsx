@@ -26,7 +26,6 @@ const PreviewComponent: React.FC<RenderPreviewProps> = ({ preview }) => {
 
   try {
     Preview = require(`./previews/${preview}`).default;
-    console.log(Preview);
   } catch (error) {
     Preview = () => null;
   }
@@ -35,7 +34,7 @@ const PreviewComponent: React.FC<RenderPreviewProps> = ({ preview }) => {
     <Header name={preview} />
     <div style={styledPreview}>
       <h1>
-        ✒️ Examples
+        Examples
       </h1>
       <Preview/>
     </div>

@@ -8,3 +8,9 @@
   padding: 40px 20px;
   overflow-y: auto;
 }
+
+@media (max-width: 45em) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+} 

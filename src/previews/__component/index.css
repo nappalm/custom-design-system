@@ -1,0 +1,12 @@
+.headerExample div {
+  background-color: #edf2f4;
+  width: fit-content;
+  padding: 2px 10px;
+}
+.headerExample {
+  border-bottom: 1px solid #edf2f4;
+}
+
+.contentExample {
+  margin: 20px 0;
+}

@@ -4,7 +4,31 @@
   overflow-y: auto;
   font-family: 'Fira Mono', monospace;
   font-size: 14px;
+  transition: all .8s ease-in-out;
 }
+.floatMenu {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #212529;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: none;
+}
+.visible {
+  margin-top: 0vh !important;
+}
+@media (max-width: 45em) {
+  .nav {
+    position: absolute;
+    margin-top: -100vh;
+  }
+  .floatMenu {
+    display: block;
+  }
+} 
 
 .list {
   list-style: none;
@@ -27,11 +51,7 @@
   margin: 5px 10px;
   border-radius: 5px;
   color: #edf6f9;
-}
-
-.section a {
-  color: #edf6f9;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .section ol:hover:not(.active) {

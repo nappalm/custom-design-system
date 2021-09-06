@@ -7,7 +7,10 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.css'],
   },
   devServer: {
-    historyApiFallback: true
+    port: 4646,
+    open: true,
+    historyApiFallback: true,
+    hot: true,
   },
   module: {
     rules: [

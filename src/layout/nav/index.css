@@ -1,7 +1,6 @@
 .nav {
   background-color: #212529;
   width: 100%;
-  overflow-y: auto;
   font-family: 'Fira Mono', monospace;
   font-size: 14px;
   transition: all .8s ease-in-out;
@@ -27,12 +26,18 @@
   }
   .floatMenu {
     display: block;
+    z-index: 1;
+    cursor: pointer;
   }
 } 
 
 .list {
+  height: 100vh;
+  overflow-y: auto;
   list-style: none;
   padding: 0;
+  margin: 0;
+  padding: 20px;
 }
 
 .section {

@@ -10,21 +10,21 @@ const Home: React.FC<any> = () => {
         src={Caldera} 
         alt="caldera-icon" />
       <h1 className={styled.title}>
-        Bienvenido al curso de Design System
+        Bienvenido al curso de Custom Design System
       </h1>
+      <p className={styled.author}>By: manuel morales</p>
       <p>
-        En este curso aprenderas a crear tu propio sistema de diseño. <br />
-        Es necesario que ya hayas adquiro conocimiento sobre <code className={styled.code}>React.js</code> & <code className={styled.code}>Typescript</code> <br />
-        de lo contrario no te preocupes, te ayudare a mejorar tus conocimientos. 
-        <br /> <br />
-        Recuerda que para aprender solo necesitar practicar y aquí tienes suficiente por hacer.
+        En este <b>curso</b> aprenderas a desarrollar tu propio <br />
+        sistema de diseño utilizando conocimientos avanzados <br /> 
+        de <code className={styled.code}>Typescript</code> & 
+        <code className={styled.code}>React.js</code>.
       </p>
 
       <div className={styled.divider}></div>
 
       <div className={styled.linksSection}>
         <p>Tambien puedes descargar el código completo</p>
-        <a href="https://github.com/nappalm">
+        <a href="https://github.com/nappalm" target="_blank">
           Ver en Github
         </a>
       </div>

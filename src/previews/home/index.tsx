@@ -21,6 +21,7 @@ const Home: React.FC<any> = () => (
       sistema de diseño utilizando conocimientos avanzados
       <br />
       <code className={styled.code}>Typescript</code>
+      &nbsp; & &nbsp;
       <code className={styled.code}>React.js</code>
       .
     </p>

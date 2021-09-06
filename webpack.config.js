@@ -1,5 +1,5 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.tsx'),
@@ -30,9 +30,9 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true
-            }
-          }
+              modules: true,
+            },
+          },
         ],
       },
       {
@@ -55,4 +55,4 @@ module.exports = {
     }),
   ],
   stats: 'errors-only',
-}
+};

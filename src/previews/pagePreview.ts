@@ -11,5 +11,5 @@ export default [
   'select',
   'form',
   'skeleton',
-  'spin'
+  'spin',
 ];

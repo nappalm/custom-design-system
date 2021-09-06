@@ -6,15 +6,13 @@ type HeaderProps = {
   name?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ name }) => {
-  return (
-    <div className={styled.header}>
-      <div>
-        <img src={Occurencia} alt="abrazo-icon" height={100} />
-      </div>
-      {name}
+const Header: React.FC<HeaderProps> = ({ name }) => (
+  <div className={styled.header}>
+    <div>
+      <img src={Occurencia} alt="abrazo-icon" height={100} />
     </div>
-  )
-}
+    {name}
+  </div>
+);
 
 export default Header;

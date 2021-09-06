@@ -5,19 +5,21 @@ type ExampleProps = {
   title?: string;
   children?: React.ReactNode;
 }
+
 const Example: React.FC<ExampleProps> = (props) => {
+  const { title, children } = props;
   return (
     <div>
       <div className={styled.headerExample}>
         <div>
-          {props.title}
+          {title}
         </div>
       </div>
       <div className={styled.contentExample}>
-        {props.children}
+        {children}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Example;

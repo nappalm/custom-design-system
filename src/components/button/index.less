@@ -5,10 +5,11 @@
   border-radius: 5px;
   cursor: pointer;
   &-primary {
+    color: @secondary-color;
     background-color: @primary-color;
   }
   &-secondary {
-    color: white;
+    color: @text-color;
     background-color: @secondary-color;
   }
   &-text {
@@ -39,4 +40,9 @@
 .btn-block {
   display: block;
   width: 100%;
+}
+
+.btn-disabled {
+  opacity: .5;
+  cursor: default;
 }

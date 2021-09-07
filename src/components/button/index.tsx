@@ -18,7 +18,7 @@ type ButtonProps = {
 // 🔰 Base button component
 const prefixCls = 'btn';
 const Button: React.FC<ButtonProps> = (props) => {
-  const { 
+  const {
     children,
     type = 'secondary',
     disabled = false,
@@ -42,7 +42,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   );
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
-    const { onClick, disabled } = props;
+    const { onClick } = props;
 
     if (disabled === false) {
       e.preventDefault();
@@ -50,15 +50,16 @@ const Button: React.FC<ButtonProps> = (props) => {
     }
 
     (onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e);
-  }
+  };
 
   const node = (
-    <button 
+    <button
       onClick={handleClick}
-      type="button" 
-      className={classes} 
-      style={style}>
-        {children}
+      type="button"
+      className={classes}
+      style={style}
+    >
+      {children}
     </button>
   );
 

@@ -5,17 +5,15 @@ import Example from '../__component/example';
 const Home: React.FC<any> = () => (
   <div>
     <div className="example">
-      <Example title="Tipos de botones">
+      <Example title="🔰 Button Types">
         <Button
           type="primary"
-          disabled
           loading
         >
           Primary button
         </Button>
         &nbsp;
         <Button
-          disabled
           loading
         >
           Secondary button
@@ -23,7 +21,6 @@ const Home: React.FC<any> = () => (
         &nbsp;
         <Button
           type="text"
-          disabled
           loading
         >
           Primary button
@@ -31,28 +28,32 @@ const Home: React.FC<any> = () => (
         &nbsp;
         <Button
           type="link"
-          disabled
           loading
         >
           Link button
         </Button>
       </Example>
-      <Example title="Medidas de boton">
-        <Button size="small">
+      <Example title="🔰 Button sizes">
+        <Button size="small" type="primary">
           Small
         </Button>
         &nbsp;
-        <Button size="medium">
+        <Button size="medium" type="primary">
           Medium
         </Button>
         &nbsp;
-        <Button size="large">
+        <Button size="large" type="primary">
           Large
         </Button>
       </Example>
-      <Example title="Boton en bloque">
-        <Button block>
+      <Example title="🔰 Block button">
+        <Button block type="primary">
           Block button
+        </Button>
+      </Example>
+      <Example title="🔰 Disabled button">
+        <Button disabled type="primary">
+          Disabled button
         </Button>
       </Example>
     </div>

@@ -37,6 +37,19 @@ const Home: React.FC<any> = () => (
           Link button
         </Button>
       </Example>
+      <Example title="Medidas de boton">
+        <Button size="small">
+          Small
+        </Button>
+        &nbsp;
+        <Button size="medium">
+          Medium
+        </Button>
+        &nbsp;
+        <Button size="large">
+          Large
+        </Button>
+      </Example>
     </div>
   </div>
 );

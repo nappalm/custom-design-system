@@ -9,6 +9,7 @@ type ButtonProps = {
   disabled?: boolean;
   block?: boolean;
   loading?: boolean;
+  size?: 'small' | 'medium' | 'large';
   className?: string;
   style?: React.CSSProperties;
   onClick?: React.MouseEventHandler<HTMLElement>;
@@ -23,6 +24,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     disabled = false,
     block = false,
     loading = false,
+    size = 'medium',
     className,
     style,
   } = props;
@@ -34,6 +36,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-block`]: block,
       [`${prefixCls}-loading`]: loading,
+      [`${prefixCls}-${size}`]: size,
     },
     className,
   );

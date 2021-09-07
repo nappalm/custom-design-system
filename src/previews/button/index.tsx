@@ -5,7 +5,7 @@ import Example from '../__component/example';
 const Home: React.FC<any> = () => (
   <div>
     <div className="example">
-      <Example title="🔰 Button Types">
+      <Example title="Button Types">
         <Button
           type="primary"
           loading
@@ -33,7 +33,7 @@ const Home: React.FC<any> = () => (
           Link button
         </Button>
       </Example>
-      <Example title="🔰 Button sizes">
+      <Example title="Button sizes">
         <Button size="small" type="primary">
           Small
         </Button>
@@ -46,12 +46,12 @@ const Home: React.FC<any> = () => (
           Large
         </Button>
       </Example>
-      <Example title="🔰 Block button">
+      <Example title="Block button">
         <Button block type="primary">
           Block button
         </Button>
       </Example>
-      <Example title="🔰 Disabled button">
+      <Example title="Disabled button">
         <Button disabled type="primary">
           Disabled button
         </Button>

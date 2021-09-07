@@ -6,6 +6,7 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.css'],
   },
+  mode: 'development',
   devServer: {
     port: 4646,
     open: true,

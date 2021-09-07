@@ -50,6 +50,11 @@ const Home: React.FC<any> = () => (
           Large
         </Button>
       </Example>
+      <Example title="Boton en bloque">
+        <Button block>
+          Block button
+        </Button>
+      </Example>
     </div>
   </div>
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import './index.less';
+import LoadingButton from './loadingIcon';
 
 // 🔥 Type button props
 type ButtonProps = {
@@ -44,7 +45,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
     const { onClick } = props;
 
-    if (disabled === false) {
+    if (disabled === true) {
       e.preventDefault();
       return;
     }
@@ -59,6 +60,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       className={classes}
       style={style}
     >
+      { loading && <LoadingButton />}
       {children}
     </button>
   );

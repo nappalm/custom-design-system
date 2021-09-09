@@ -6,11 +6,16 @@
   border-radius: 5px;
   cursor: pointer;
   transition: opacity .3s ease-in-out;
+  position: relative;
   &:hover:not(.btn-disabled) {
     opacity: .8;
   }
   &:active:not(.btn-disabled) {
     opacity: 1;
+  }
+
+  .spinner {
+    padding-left: 30px;
   }
 }
 
@@ -57,7 +62,28 @@
 }
 
 // 🔰 Disabled button style
+.btn-loading,
 .btn-disabled {
   opacity: .5;
   cursor: default;
+}
+
+// 🔰 Button loading spinner class
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+.spinner {
+  position: relative;
+}
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.267);
+  border-top-color: transparent;
+  animation: spinner .6s linear infinite;
 }

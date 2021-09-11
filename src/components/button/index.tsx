@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames';
 import './index.less';
 import LoadingButton from './loadingIcon';
 
@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     style,
   } = props;
 
-  const classes = classnames(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-${type}`]: type,
@@ -61,7 +61,9 @@ const Button: React.FC<ButtonProps> = (props) => {
       style={style}
     >
       { loading && <LoadingButton />}
-      {children}
+      <span>
+        {children}
+      </span>
     </button>
   );
 

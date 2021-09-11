@@ -71,6 +71,31 @@ const Home: React.FC<any> = () => {
             Click to show loading
           </Button>
         </Example>
+        <Example title="Loading button sizes">
+          <Button
+            type="primary"
+            size="small"
+            loading
+          >
+            Loading small
+          </Button>
+          &nbsp;
+          <Button
+            type="primary"
+            size="medium"
+            loading
+          >
+            Loading medium
+          </Button>
+          &nbsp;
+          <Button
+            type="primary"
+            size="large"
+            loading
+          >
+            Loading large
+          </Button>
+        </Example>
       </div>
     </div>
   );

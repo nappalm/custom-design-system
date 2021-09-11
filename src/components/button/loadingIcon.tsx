@@ -1,8 +1,9 @@
 import React from 'react';
-import './index.less';
+import './loading.less';
 
+const prefixCls = 'loading-icon';
 const LoadingIcon: React.FC<unknown> = () => (
-  <i className="spinner" />
+  <span className={prefixCls} />
 );
 
 export default LoadingIcon;

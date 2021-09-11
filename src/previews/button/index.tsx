@@ -96,6 +96,15 @@ const Home: React.FC<any> = () => {
             Loading large
           </Button>
         </Example>
+        <Example title="Custom button style">
+          <Button style={{ backgroundColor: '#e63946', color: 'white' }}>
+            Danger button
+          </Button>
+          &nbsp;
+          <Button style={{ backgroundColor: '#43aa8b', color: 'white' }}>
+            Success button
+          </Button>
+        </Example>
       </div>
     </div>
   );

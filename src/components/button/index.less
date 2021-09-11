@@ -1,0 +1,73 @@
+@import '../config.less';
+
+// 🔰 Base button style
+.btn {
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+  position: relative;
+  width: fit-content;
+  &:hover:not(.btn-disabled) {
+    opacity: .8;
+  }
+  &:active:not(.btn-disabled) {
+    opacity: 1;
+  }
+}
+
+// 🔰 Button types
+.btn {
+  &-primary {
+    color: @secondary-color;
+    background-color: @primary-color;
+  }
+  &-secondary {
+    color: @text-color;
+    background-color: @secondary-color;
+  }
+  &-text {
+    color: @text-color;
+    background-color: transparent;
+  }
+  &-link {
+    background-color: transparent;
+    color: @link-color;
+  }
+}
+
+// 🔰 Button sizes
+.btn {
+  &-small {
+    font-size: @font-size-small;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+  &-medium {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: @font-size-medium;
+  }
+  &-large {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    font-size: @font-size-large;
+  }
+}
+
+// 🔰 Block button style
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// 🔰 Disabled button style
+.btn-loading,
+.btn-disabled {
+  opacity: .5;
+  cursor: default;
+}
+

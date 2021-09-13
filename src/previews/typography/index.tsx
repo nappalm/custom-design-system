@@ -23,6 +23,9 @@ const Preview: React.FC<any> = () => (
           <Typography.Text code style={{ width: 'fit-content' }}>
             (code) Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </Typography.Text>
+          <Typography.Link href="https://www.google.com" target="__blank">
+            Go to google.com
+          </Typography.Link>
         </div>
       </Example>
     </div>

@@ -1,0 +1,46 @@
+@import '../config.less';
+
+.typography {
+  color: @text-color;
+  
+  &-underline {
+    text-decoration: underline;
+  }
+  &-bold {
+    font-weight: 500;
+  }
+  &-italic {
+    font-style: italic;
+  }
+  &-code {
+    background-color: @code-bg;
+    color: @code-color;
+    border-radius: 5px;
+    padding: 1px 2px;
+  }
+  &-link {
+    color: @link-color;
+  }
+  &-ellipsis {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+  }
+}
+
+.typography {
+  &-primary {
+    color: @primary-color;
+  }
+  &-gray {
+    color: @gray-color;
+  }
+  &-danger {
+    color: @danger-color;
+  }
+  &-warning {
+    color: @warning-color;
+  }
+}

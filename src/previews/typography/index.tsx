@@ -28,6 +28,22 @@ const Preview: React.FC<any> = () => (
           </Typography.Link>
         </div>
       </Example>
+      <Example title="Typography types">
+        <div className={style.gridTypography}>
+          <Typography.Text type="primary">
+            (primary) Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </Typography.Text>
+          <Typography.Text type="gray">
+            (seconday) Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </Typography.Text>
+          <Typography.Text type="danger">
+            (danger) Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </Typography.Text>
+          <Typography.Text type="warning">
+            (warning) Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </Typography.Text>
+        </div>
+      </Example>
     </div>
   </div>
 );

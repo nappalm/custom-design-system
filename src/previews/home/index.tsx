@@ -13,7 +13,7 @@ const Home: React.FC<any> = () => (
       Bienvenido al curso de Custom Design System
     </h1>
     <p className={styled.author}>By: manuel morales</p>
-    <p>
+    <p className={styled.info}>
       En este
       <b>curso</b>
       aprenderas a desarrollar tu propio

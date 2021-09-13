@@ -44,6 +44,23 @@ const Preview: React.FC<any> = () => (
           </Typography.Text>
         </div>
       </Example>
+      <Example title="Typography Title">
+        <Typography.Title size={1}>
+          h1 Typography
+        </Typography.Title>
+        <Typography.Title size={2}>
+          h2 Typography
+        </Typography.Title>
+        <Typography.Title size={3}>
+          h3 Typography
+        </Typography.Title>
+        <Typography.Title size={4}>
+          h4 Typography
+        </Typography.Title>
+        <Typography.Title size={5}>
+          h5 Typography
+        </Typography.Title>
+      </Example>
     </div>
   </div>
 );

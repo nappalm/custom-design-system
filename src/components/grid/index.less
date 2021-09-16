@@ -1,0 +1,108 @@
+@max-column: 12;
+@column-percent: 8.333333333333333%;
+
+@xll-size: 1600px;
+@xl-size: 1200px;
+@lg-size: 992px;
+@md-size: 768px;
+@sm-size: 576px;
+@xs-size: 575px;
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+[class*="col-span-"] {
+  display: block;
+}
+
+.col {
+  position: relative;
+  max-width: 100%;
+  min-height: 30px;
+}
+
+.sizes-loop (@i) when (@i > 0) {
+  .col-span-@{i} {
+    max-width: (@column-percent * @i);
+    flex: 0 0 (@column-percent * @i);
+  }
+  .sizes-loop(@i - 1);
+}
+
+.sizes-loop(@max-column);
+
+
+
+@media screen and (max-width: @xll-size), (min-width: @xll-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-xll-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}
+
+@media screen and (max-width: @xl-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-xl-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}
+
+@media screen and (max-width: @lg-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-lg-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}
+
+@media screen and (max-width: @md-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-md-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}
+
+@media screen and (max-width: @sm-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-sm-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}
+
+@media screen and (max-width: @xs-size) {
+  .size-loop (@i) when (@i > 0) {
+    .col-xs-@{i} {
+      max-width: (@column-percent * @i);
+      flex: 0 0 (@column-percent * @i);
+    }
+    .size-loop(@i - 1);
+  }
+  
+  .size-loop(@max-column);
+}

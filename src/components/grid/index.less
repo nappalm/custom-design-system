@@ -8,21 +8,45 @@
 @sm-size: 576px;
 @xs-size: 575px;
 
+// 🔰 Rows
 .row {
   display: flex;
   flex-flow: row wrap;
 }
 
-[class*="col-span-"] {
-  display: block;
+// 👉 Justify
+.row-justify {
+  &-space-between {
+    justify-content: space-between;
+  }
+  &-space-around {
+    justify-content: space-around;
+  }
+  &-end {
+    justify-content: end;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-start {
+    justify-content: start;
+  }
 }
 
-.col {
-  position: relative;
-  max-width: 100%;
-  min-height: 30px;
+// 👉 Align
+.row-align {
+  &-top {
+    align-items: flex-start;
+  }
+  &-middle {
+    align-items: center;
+  }
+  &-bottom {
+    align-items: flex-end;
+  }
 }
 
+// 🔰 Cols
 .sizes-loop (@i) when (@i > 0) {
   .col-span-@{i} {
     max-width: (@column-percent * @i);
@@ -33,8 +57,14 @@
 
 .sizes-loop(@max-column);
 
-
-
+[class*="col-span-"] {
+  display: block;
+}
+.col {
+  position: relative;
+  max-width: 100%;
+  min-height: 30px;
+}
 @media screen and (max-width: @xll-size), (min-width: @xll-size) {
   .size-loop (@i) when (@i > 0) {
     .col-xll-@{i} {

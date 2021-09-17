@@ -3,13 +3,14 @@ import React from 'react';
 import { GridProps } from './grid';
 
 type positionConfig = 'start' | 'end' | 'center' | 'space-between' | 'space-around';
+type alignConfig = 'top' | 'middle' | 'bottom';
 
 type Gap = number;
 
 interface InternalRowProps extends GridProps {
   gap?: Gap | [Gap, Gap];
   justifyContent?: positionConfig;
-  align?: positionConfig;
+  align?: alignConfig;
 }
 
 // 🔰 Row component
@@ -20,10 +21,16 @@ const Row: React.FC<InternalRowProps> = (props) => {
     style,
     children,
     gap = 0,
+    justifyContent,
+    align,
   } = props;
 
   const classes = classNames(
     prefixCls,
+    {
+      [`${prefixCls}-justify-${justifyContent}`]: justifyContent,
+      [`${prefixCls}-align-${align}`]: align,
+    },
     className,
   );
 

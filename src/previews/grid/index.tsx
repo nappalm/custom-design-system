@@ -131,6 +131,112 @@ const Preview: React.FC<any> = () => (
           </Col>
         </Row>
       </Example>
+      <Example title="Justify content">
+        <Row gap={[20, 20]} justifyContent="start">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Start
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Start
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={[20, 20]} justifyContent="center">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Center
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Center
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={[20, 20]} justifyContent="end">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 End
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 End
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={[20, 20]} justifyContent="space-around">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Space around
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Space around
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={[20, 20]} justifyContent="space-between">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Space between
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: '100%' }}>
+              🔥 Space between
+            </div>
+          </Col>
+        </Row>
+      </Example>
+      <Example title="Align items">
+        <Row gap={20} align="top">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 100 }}>
+              🔥 Top
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 50 }}>
+              🔥 Top
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={20} align="middle">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 100 }}>
+              🔥 Middle
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 50 }}>
+              🔥 Middle
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row gap={20} align="bottom">
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 100 }}>
+              🔥 Bottom
+            </div>
+          </Col>
+          <Col span={3}>
+            <div style={{ backgroundColor: '#4361ee', color: 'white', height: 50 }}>
+              🔥 Bottom
+            </div>
+          </Col>
+        </Row>
+      </Example>
     </div>
   </div>
 );

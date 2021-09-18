@@ -1,0 +1,42 @@
+@import '../config.less';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  .dropdown-el {
+    position: relative;
+    z-index: 2;
+  }
+  .dropdown-overlay {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+
+    border-left: 2px solid @secondary-color;
+    border-right: 2px solid @secondary-color;
+    border-bottom: 2px solid @secondary-color;
+
+    border-radius: 0 0 @border-radius @border-radius;
+    margin-top: -5px;
+    padding-top: 5px;
+  }
+}
+
+.dropdown-placement {
+  &-top {
+    .dropdown-overlay {
+      top: 0;
+    }
+  }
+}
+
+// 🔰 Trigger
+.dropdown-trigger-hover:hover .dropdown-overlay {
+  display: block;
+}
+
+.dropdown-visible .dropdown-overlay {
+  display: block;
+}

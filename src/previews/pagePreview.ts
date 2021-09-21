@@ -12,4 +12,5 @@ export default [
   'form',
   'skeleton',
   'spin',
+  'modal',
 ];
